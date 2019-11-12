@@ -47,7 +47,11 @@ header {
 .menu-icons {
     display: flex;
 }
-
+.menu-icon {
+    margin-left: auto;
+    position: relative;
+    top: -45px;
+}
 .menu-icon img {
     filter: invert(1);
     width: 20px;
@@ -64,11 +68,12 @@ header {
 
 #header-content .sponsor {
     text-transform: uppercase;
-    letter-spacing: 22px;
+    letter-spacing: 17px;
     color: #11749e;
     padding-bottom: 115px;
     font-weight: 600;
     font-size: 25px;
+    padding-left: 15px;
 }
 
 #header-content .scroll {
@@ -87,6 +92,11 @@ header {
     filter: invert(1);
 }
 
+.scroll-arrow {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 30px;
+}
 /*####################*/
 #about {
     background: black;
@@ -94,8 +104,8 @@ header {
 
 #about img {
     filter: invert(1.5);
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 35px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -122,6 +132,7 @@ header {
     font-family: 'Roboto', sans-serif;
     left: 40%;
     color: #fbfbfb29;
+    font-weight: 600;
 }
 
 #about .about-title {
@@ -161,10 +172,43 @@ header {
     background: #f3f3f3;
     color: #222222;
 }
+/*****************************/
+#blog {
+    padding-top: 160px;
+    padding-bottom: 110px;
+    font-family: 'Gotham', sans-serif;
+}
+.letter-background-b {
+    position: absolute;
+    font-size: 247px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #d7d7d7;
+}
+.title-blog {
+    font-size: 37px;
+    text-transform: uppercase;
+    margin-bottom: 115px;
+}
+.blog-titles {
+    font-size: 18px;
+    color: #11749e;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.blog-text {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #898989;
+}
 
 /*#################*/
 #write {
     background: black;
+    padding-top: 110px;
+    padding-bottom: 130px;
 }
 #write img {
     width: 70px;
@@ -173,11 +217,110 @@ header {
 }
 #write p {
     color: #f4f4f4;
+    font-family: 'Gotham', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
+
+/*##########################*/
+#production {
+    background: url("../img/production-img.png") fixed no-repeat;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    margin-bottom: 135px;
+    color: #ffffff;
+}
+.production-title {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.sub-title-text {
+    font-size: 15px;
+    font-family: 'Gotham', sans-serif;
+    color: #d0d0d0;
+    margin-bottom: 70px;
+    letter-spacing: 1px;
+}
+
+.service p {
+    text-transform: uppercase;
+    font-family: 'Gotham', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background: #11749e;
+    height: 40px;
+    padding: 10px 0 0 20px;
+}
+
+.service .first {
+    width: 370px;
+}
+
+.service .second {
+    width: 400px;
+}
+
+.service .third {
+    width: 430px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@*/
+.letter-background-t {
+    position: absolute;
+    font-size: 247px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #d7d7d7;
+}
+#team h1 {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 37px;
+    position: relative;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 140px;
+}
+
+.sub-title {
+    font-family: 'Gotham', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #222222;
+    margin-bottom: 70px;
+}
+
+.box-item-description {
+    position: relative;
+    width: 215px;
+    height: 75px;
+    background: white;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.box-item-description h6 {
+    color: #11749e;
+    font-weight: 500;
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.box-item-description p {
+    font-family: 'Gotham', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 /*#####################*/
 #contact {
     background: url("../img/contact-back-img.png") fixed no-repeat;
     padding-top: 225px;
+    margin-top: 90px;
 }
 .letter-background-c {
     position: absolute;
@@ -200,6 +343,7 @@ header {
     background: transparent;
     margin-bottom: 40px;
     margin-top: 150px;
+    padding: 20px;
 }
 .message {
     width: 100%;
@@ -207,6 +351,7 @@ header {
     border: 1px solid #ffffff;
     background: transparent;
     margin-bottom: 45px;
+    padding: 20px 0 110px 20px;
 }
 .btn {
     width: 230px;
