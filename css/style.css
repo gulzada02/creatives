@@ -18,6 +18,7 @@ a, a:hover {
 /***************************/
 header {
     background: url("../img/background.png") fixed no-repeat;
+    background-size: cover;
 }
 
 .header-top {
@@ -158,6 +159,9 @@ nav {
 }
 
 /*$$$$$$$$$$$$$$$$$$*/
+.col-lg-6 img {
+    width: 700px;
+}
 .grey {
     background: #222222;
     color: white;
@@ -171,7 +175,7 @@ nav {
 }
 /*****************************/
 #blog {
-    padding-top: 165px;
+    padding-top: 95px;
     padding-bottom: 110px;
     font-family: 'Gotham', sans-serif;
 }
@@ -182,8 +186,11 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #d7d7d7;
+    z-index: -1;
 }
 .title-blog {
+    position: relative;
+    top: 120px;
     font-size: 37px;
     text-transform: uppercase;
     margin-bottom: 115px;
@@ -224,6 +231,7 @@ nav {
 /*##########################*/
 #production {
     background: url("../img/production-img.png") fixed no-repeat;
+    background-size: cover;
     padding-top: 120px;
     padding-bottom: 100px;
     margin-bottom: 135px;
@@ -274,12 +282,14 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #d7d7d7;
+    z-index: -1;
 }
 #team h1 {
     font-family: 'Gotham', sans-serif;
     font-weight: 400;
     font-size: 37px;
     position: relative;
+    top: 143px;
     color: #222222;
     text-transform: uppercase;
     margin-bottom: 140px;
