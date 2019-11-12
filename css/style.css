@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 li {
     list-style: none;
+    color: inherit;
 }
 
 a, a:hover {
@@ -7,7 +12,7 @@ a, a:hover {
     color: inherit;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1140px;
 }
 
 /***************************/
@@ -19,21 +24,22 @@ header {
     height: 115px;
     border-bottom: 1px solid #7a7a7a;
 }
-
-.logo {
-    position: absolute;
-    padding: 23px 0 0 115px;
-}
-
-.menu-items {
+nav {
     display: flex;
-    justify-content: center;
-    color: #ffffff;
-    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    padding-top: 20px;
+}
+.menu-icons, .menu-items {
+    display: flex;
+    padding-top: 50px;
+    color: white;
 }
 
-.menu-item {
-    margin: 55px 0 0 65px;
+.menu-item, .menu-icon {
+    margin-left: 50px;
 }
 
 .menu-item a:hover,
@@ -41,17 +47,9 @@ header {
     border-bottom: 3px solid #11749e;
     width: 100%;
     transition: .3s;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
-.menu-icons {
-    display: flex;
-}
-.menu-icon {
-    margin-left: auto;
-    position: relative;
-    top: -45px;
-}
 .menu-icon img {
     filter: invert(1);
     width: 20px;
@@ -79,19 +77,18 @@ header {
 #header-content .scroll {
     color: #c7c7c6;
     font-size: 13px;
+    margin-bottom: 40px;
 }
 
-.scroll {
-    margin-bottom: 280px;
-
+.scroll-nav {
+    text-align: center;
+    margin-bottom: 110px;
 }
-
-.scroll img {
+.scroll-nav img {
     width: 20px;
     height: 12px;
     filter: invert(1);
 }
-
 .scroll-arrow {
     border: 1px solid white;
     border-radius: 100px;
@@ -99,7 +96,8 @@ header {
 }
 /*####################*/
 #about {
-    background: black;
+    background: #11749e;
+    height: 735px;
 }
 
 #about img {
@@ -130,7 +128,7 @@ header {
     position: absolute;
     font-size: 247px;
     font-family: 'Roboto', sans-serif;
-    left: 40%;
+    left: 43%;
     color: #fbfbfb29;
     font-weight: 600;
 }
@@ -139,10 +137,9 @@ header {
     font-family: 'Gotham', sans-serif;
     font-weight: 400;
     font-size: 37px;
-    position: relative;
-    bottom: 35px;
     color: #ffffff;
     text-transform: uppercase;
+    padding-top: 165px;
 }
 
 .big-text {
@@ -174,12 +171,13 @@ header {
 }
 /*****************************/
 #blog {
-    padding-top: 160px;
+    padding-top: 165px;
     padding-bottom: 110px;
     font-family: 'Gotham', sans-serif;
 }
 .letter-background-b {
     position: absolute;
+    left: 43%;
     font-size: 247px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -206,7 +204,8 @@ header {
 
 /*#################*/
 #write {
-    background: black;
+    background: #11749e;
+    height: 355px;
     padding-top: 110px;
     padding-bottom: 130px;
 }
@@ -271,6 +270,7 @@ header {
 .letter-background-t {
     position: absolute;
     font-size: 247px;
+    left: 43%;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #d7d7d7;
@@ -327,6 +327,7 @@ header {
     font-size: 247px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+    left: 43%;
 }
 #contact h1 {
     font-family: 'Gotham', sans-serif;
