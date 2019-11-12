@@ -6,7 +6,6 @@ a, a:hover {
     text-decoration: none;
     color: inherit;
 }
-
 .container {
     max-width: 1200px;
 }
@@ -120,8 +119,8 @@ header {
 .letter-background-w {
     position: absolute;
     font-size: 247px;
-    left: 40%;
     font-family: 'Roboto', sans-serif;
+    left: 40%;
     color: #fbfbfb29;
 }
 
@@ -174,4 +173,63 @@ header {
 }
 #write p {
     color: #f4f4f4;
+}
+/*#####################*/
+#contact {
+    background: url("../img/contact-back-img.png") fixed no-repeat;
+    padding-top: 225px;
+}
+.letter-background-c {
+    position: absolute;
+    font-size: 247px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+#contact h1 {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 37px;
+    position: relative;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.form-input {
+    width: 370px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+.message {
+    width: 100%;
+    height: 145px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    margin-bottom: 45px;
+}
+.btn {
+    width: 230px;
+    height: 65px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 100px;
+    background: #11749e;
+}
+.btn:hover {
+    transition: .3s;
+    background: #d57737;
+}
+/*#######################*/
+footer {
+    background: #222222;
+    height: 113px;
+    padding-top: 50px;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    padding-top: 5px;
 }
