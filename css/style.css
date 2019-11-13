@@ -2,9 +2,27 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url("../fonts/14006.otf");
+}
+
+@font-face {
+    font-family: 'GothamPro-Medium';
+    src: url("../fonts/14082.ttf");
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url("../fonts/14008.otf");
+
+}
+
 html {
     scroll-behavior: smooth;
 }
+
 li {
     list-style: none;
     color: inherit;
@@ -14,6 +32,7 @@ a, a:hover {
     text-decoration: none;
     color: inherit;
 }
+
 .container {
     max-width: 1140px;
 }
@@ -28,22 +47,27 @@ header {
     height: 115px;
     border-bottom: 1px solid #7a7a7a;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .scroll-menu {
     position: fixed;
     z-index: 999;
 }
+
 .header-fixed {
     background: #d57737c7;;
     padding: 0 25px 25px 25px;
 }
+
 .logo {
     padding-top: 20px;
 }
+
 .menu-icons, .menu-items {
     display: flex;
     padding-top: 50px;
@@ -52,59 +76,57 @@ nav {
 
 .menu-item, .menu-icon {
     margin-left: 50px;
+    font-size: 20px;
 }
 
 .menu-item a:hover,
-.menu-item a:active {
+.menu-icon a:hover {
     border-bottom: 3px solid #11749e;
     width: 100%;
     transition: .3s;
     padding-bottom: 40px;
 }
 
-.menu-icon img {
-    filter: invert(1);
-    width: 20px;
-    height: 20px;
-}
-
 #header-content h1 {
     color: #f5f5f5;
-    font-weight: 600;
-    font-size: 153px;
+    font-size: 152.54px;
     padding-top: 275px;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham-Bold', sans-serif;
 }
 
 #header-content .sponsor {
+    font-family: 'GothamPro-Medium', sans-serif;
     text-transform: uppercase;
     letter-spacing: 17px;
     color: #11749e;
     padding-bottom: 115px;
-    font-weight: 600;
-    font-size: 25px;
+    font-size: 24.79px;
     padding-left: 15px;
 }
 
 #header-content .scroll {
     color: #c7c7c6;
     font-size: 13px;
-    margin-bottom: 40px;
+    font-family: 'OpenSans', sans-serif;
+    padding-bottom: 20px;
 }
 
 .scroll-nav {
     text-align: center;
     margin-bottom: 110px;
 }
-.scroll-nav img {
-    width: 20px;
-    height: 12px;
-    filter: invert(1);
+
+.icon-expand_more:before {
+    color: white;
+    font-size: 50px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 10px;
 }
-.scroll-arrow {
-    border: 1px solid white;
-    border-radius: 100px;
-    padding: 30px;
+
+.icon-expand_more:hover:before {
+    color: #d57737c7;
+    transition: .3s;
 }
 /*####################*/
 #about {
@@ -138,85 +160,130 @@ nav {
 
 .letter-background-w {
     position: absolute;
-    font-size: 247px;
+    font-size: 247.18px;
     font-family: 'Roboto', sans-serif;
-    left: 43%;
+    left: 605px;
     color: #fbfbfb29;
-    font-weight: 600;
+    font-weight: 700;
+    padding-top: 35px;
 }
 
 #about .about-title {
-    font-family: 'Gotham', sans-serif;
-    font-weight: 400;
-    font-size: 37px;
+    font-family: 'GothamPro-Medium', sans-serif;
+    font-size: 37.55px;
     color: #ffffff;
     text-transform: uppercase;
-    padding-top: 165px;
+    padding-top: 170px;
 }
 
 .big-text {
     font-size: 18px;
-    font-weight: 500;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'GothamPro-Medium', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
 }
 
 .small-text {
     font-size: 15px;
-    font-family: 'Gotham', sans-serif;
-    color: white;
+    font-family: 'Gotham-Book', sans-serif;
+    color: #fff;
     margin-bottom: 100px;
+    width: 265px;
 }
 
 /*$$$$$$$$$$$$$$$$$$*/
 .col-lg-6 img {
     width: 700px;
 }
+
 .grey {
     background: #222222;
     color: white;
 }
-.date {
+
+.dark-date,
+.light-date {
     margin-top: 110px;
+    font-family: 'Gotham-Book', sans-serif;
+    font-size: 13px;
 }
+
+.dark-date {
+    color: #c4c4c4;
+}
+
+.light-date,
+.light-akita {
+    color: #222222;
+}
+
+.dark-akita,
+.light-akita {
+    font-family: 'GothamPro-Medium', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.dark-akita {
+    color: #fff;
+}
+
+.text-content-dark,
+.text-content-light {
+    font-family: 'Gotham-Book', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.03px;
+}
+
 .white {
     background: #f3f3f3;
     color: #222222;
 }
+
 /*****************************/
 #blog {
     padding-top: 95px;
     padding-bottom: 110px;
     font-family: 'Gotham', sans-serif;
 }
+
 .letter-background-b {
     position: absolute;
-    left: 43%;
-    font-size: 247px;
+    font-size: 247.18px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    left: 640px;
+    font-weight: 700;
+    margin-top: -2px;
     color: #d7d7d7;
     z-index: -1;
 }
+
 .title-blog {
+    font-family: 'GothamPro-Medium', sans-serif;
     position: relative;
     top: 120px;
-    font-size: 37px;
+    font-size: 37.55px;
     text-transform: uppercase;
     margin-bottom: 115px;
 }
+
+#blog .sub-title {
+    padding-top: 115px;
+}
+
 .blog-titles {
+    font-family: 'GothamPro-Medium', sans-serif;
     font-size: 18px;
     color: #11749e;
     text-transform: uppercase;
-    font-weight: 500;
     margin-top: 45px;
     margin-bottom: 30px;
+    letter-spacing: -1px;
 }
+
 .blog-text {
+    font-family: 'Gotham-Book', sans-serif;
     font-size: 15px;
-    letter-spacing: 1px;
     color: #898989;
 }
 
@@ -227,16 +294,18 @@ nav {
     padding-top: 110px;
     padding-bottom: 130px;
 }
+
 #write img {
     width: 70px;
     height: 70px;
     filter: invert(1.5);
 }
+
 #write p {
     color: #f4f4f4;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham-Book', sans-serif;
     font-size: 15px;
-    letter-spacing: 1px;
+    width: 450px;
 }
 
 /*##########################*/
@@ -248,16 +317,17 @@ nav {
     margin-bottom: 135px;
     color: #ffffff;
 }
+
 .production-title {
-    font-family: 'Gotham', sans-serif;
-    font-weight: 600;
+    font-family: 'GothamPro-Medium', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
+
 .sub-title-text {
     font-size: 15px;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham-Book', sans-serif;
     color: #d0d0d0;
     margin-bottom: 70px;
     letter-spacing: 1px;
@@ -265,9 +335,8 @@ nav {
 
 .service p {
     text-transform: uppercase;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'GothamPro-Medium', sans-serif;
     font-size: 15px;
-    font-weight: 500;
     background: #11749e;
     height: 40px;
     padding: 10px 0 0 20px;
@@ -288,28 +357,28 @@ nav {
 /*@@@@@@@@@@@@@@@@@@@@@*/
 .letter-background-t {
     position: absolute;
-    font-size: 247px;
-    left: 43%;
+    font-size: 247.18px;
+    left: 632px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     color: #d7d7d7;
     z-index: -1;
+    margin-top: -130px;
 }
+
 #team h1 {
-    font-family: 'Gotham', sans-serif;
-    font-weight: 400;
-    font-size: 37px;
+    font-family: 'GothamPro-Medium', sans-serif;
+    font-size: 37.55px;
     position: relative;
-    top: 143px;
+    top: 40px;
     color: #222222;
     text-transform: uppercase;
     margin-bottom: 140px;
 }
 
 .sub-title {
-    font-family: 'Gotham', sans-serif;
-    font-size: 30px;
-    font-weight: 300;
+    font-family: 'Gotham-Book', sans-serif;
+    font-size: 30.06px;
     color: #222222;
     margin-bottom: 70px;
 }
@@ -324,17 +393,17 @@ nav {
     right: 0;
     margin: 0 auto;
 }
+
 .box-item-description h6 {
     color: #11749e;
-    font-weight: 500;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'GothamPro-Medium', sans-serif;
     font-size: 20px;
     padding-top: 20px;
 }
+
 .box-item-description p {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'GothamPro-Medium', sans-serif;
     font-size: 15px;
-    font-weight: 400;
 }
 
 /*#####################*/
@@ -343,21 +412,25 @@ nav {
     padding-top: 225px;
     margin-top: 90px;
 }
+
 .letter-background-c {
     position: absolute;
-    font-size: 247px;
+    font-size: 247.18px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    left: 43%;
+    font-weight: 700;
+    left: 640px;
+    color: #fbfbfb29;
+    margin-top: -165px;
 }
+
 #contact h1 {
-    font-family: 'Gotham', sans-serif;
-    font-weight: 400;
+    font-family: 'GothamPro-Medium', sans-serif;
     font-size: 37px;
     position: relative;
     color: #ffffff;
     text-transform: uppercase;
 }
+
 .form-input {
     width: 370px;
     height: 50px;
@@ -367,6 +440,7 @@ nav {
     margin-top: 150px;
     padding: 20px;
 }
+
 .message {
     width: 100%;
     height: 145px;
@@ -375,6 +449,7 @@ nav {
     margin-bottom: 45px;
     padding: 20px 0 110px 20px;
 }
+
 .btn {
     width: 230px;
     height: 65px;
@@ -382,11 +457,16 @@ nav {
     border-radius: 0;
     margin-bottom: 100px;
     background: #11749e;
+    font-family: 'Gotham-Medium', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
 }
+
 .btn:hover {
     transition: .3s;
     background: #d57737;
 }
+
 /*#######################*/
 footer {
     background: #222222;
@@ -399,4 +479,5 @@ footer p {
     font-size: 13px;
     color: #ffffff;
     padding-top: 5px;
+    font-weight: 400;
 }
