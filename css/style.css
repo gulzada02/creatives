@@ -135,8 +135,6 @@ nav {
 }
 
 #about img {
-    filter: invert(1.5);
-    width: 45px;
     height: 35px;
     position: absolute;
     top: 0;
@@ -145,7 +143,6 @@ nav {
     left: 0;
     right: 0;
 }
-
 .icon-circle {
     border: solid #2e85aa;
     width: 133px;
@@ -193,7 +190,7 @@ nav {
 
 /*$$$$$$$$$$$$$$$$$$*/
 .col-lg-6 img {
-    width: 700px;
+    width: 720px
 }
 
 .grey {
@@ -298,7 +295,6 @@ nav {
 #write img {
     width: 70px;
     height: 70px;
-    filter: invert(1.5);
 }
 
 #write p {
@@ -439,6 +435,7 @@ nav {
     margin-bottom: 40px;
     margin-top: 150px;
     padding: 20px;
+    color: #ffffff;
 }
 
 .message {
